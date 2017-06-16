@@ -27,3 +27,9 @@ resource "github_team_membership" "nrpe-maintainer-tas50" {
   username = "tas50"
   role     = "member"
 }
+
+resource "github_team_membership" "nrpe-maintainer-snkutlu" {
+  team_id  = "${github_team.nrpe_team.id}"
+  username = "snkutlu"
+  role     = "maintainer"
+}
