@@ -15,3 +15,9 @@ resource "github_team_membership" "selinuxpolicy-member-2" {
   username = "BackSlasher"
   role     = "member"
 }
+
+resource "github_team_membership" "selinuxpolicy-maintainer-snkutlu" {
+  team_id  = "${github_team.selinuxpolicy.id}"
+  username = "snkutlu"
+  role     = "maintainer"
+}
